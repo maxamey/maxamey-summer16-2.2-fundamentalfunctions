@@ -146,31 +146,12 @@ console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew
  * i.e. findLongestWord("book dogs") should return "book"
  */
 
-function findLongestWord(sentence){
-    // YOUR CODE HERE
-    //https://medium.freecodecamp.com/three-ways-to-find-the-longest-word-in-a-string-in-javascript-a2fb04c9757c#.20mdxoulc
-    var longestWord
-    //split the string into an array
-    var stringSplit = sentence.split(" ");
-
-    // var srtingNoPunc = stringSplit.replace(/\'/, "");
-
-    //set up variable to hold the longest word
-    var longestWord = "";
-    //set up variable for largest value of words for compairing
-    var largestValue = 0;
-    //if the length of the current iteration of the function is greater than the largest value, then the largest value will be set to that length and the current word will be redefined as the new longest word
-    for (var i = 0; i < stringSplit.length; i++){
-      if(stringSplit[i].length > largestValue){
-        longestWord = stringSplit[i];
-        largestValue = stringSplit[i].length;
-      }
-    }
-    return longestWord;
+function findLongestWord(words){
+  // YOUR CODE HERE
+  var sentenceArray = words.split(" ");
+  var apostropheArray[ = sentenceArray[0].split("'");
+  var longestWord
 }
-
-// spent hours trying to figure this out
-//couldn't find a good example of how I would apply in this instance
 
 
 
